@@ -1,0 +1,61 @@
+@import url(../App.scss);
+
+.landingBody {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(../resources/images/landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    transition: all 1000ms;
+}
+
+.showcase:hover::after {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.landingContent {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 30%;
+    margin-top: 20vh;
+    margin-left: 0vw;
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    transition: all 1000ms;
+    align-content: center
+}
+
+.landingLogo {
+    width: 50%;
+    height: 70%;
+}
+
+.landingContent .title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.landingContent .welcomeText {
+    line-height: 2.0;
+    margin-top: 1rem;
+}
+
+Nav {
+    position: relative;
+    z-index: 1;
+}
