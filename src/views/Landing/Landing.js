@@ -1,5 +1,5 @@
 import React from 'react';
-import DUICLogo from '../resources/images/duic_logo.png';
+import DUICLogo from '../../resources/images/duic_logo.png';
 
 import './Landing.scss';
 
